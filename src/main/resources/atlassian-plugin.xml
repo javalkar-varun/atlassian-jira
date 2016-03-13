@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<atlassian-plugin key="${project.groupId}.${project.artifactId}"
+	name="${project.name}" plugins-version="2">
+	<plugin-info>
+		<description>${project.description}</description>
+		<version>${project.version}</version>
+		<vendor name="${project.organization.name}" url="${project.organization.url}" />
+	</plugin-info>
+
+	<!-- add username and password custom field -->
+	<customfield-type name="Username Custom Field"
+		i18n-name-key="username-custom-field.name" key="username-custom-field"
+		class="com.atlassian.jira.plugins.esig.customfields.UnameCustomField">
+		<description key="username-custom-field.description">The Username Custom Field Plugin
+		</description>
+		<resource name="view" type="velocity"
+			location="/templates/customfields/username-custom-field/view.vm" />
+		<resource name="edit" type="velocity"
+			location="/templates/customfields/username-custom-field/edit.vm" />
+	</customfield-type>
+	<customfield-type name="Password Custom Field"
+		i18n-name-key="password-custom-field.name" key="password-custom-field"
+		class="com.atlassian.jira.plugins.esig.customfields.PasswordAuth">
+		<description key="password-custom-field.description">The Password Custom Field Plugin
+		</description>
+		<resource name="view" type="velocity"
+			location="/templates/customfields/username-custom-field/view.vm" />
+		<resource name="edit" type="velocity"
+			location="/templates/customfields/username-custom-field/password_edit.vm" />
+	</customfield-type>
+
+	<resource type="i18n" name="i18n" location="jira-esig-plugin" />
+
+</atlassian-plugin>

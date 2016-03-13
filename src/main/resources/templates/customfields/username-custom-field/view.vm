@@ -1,0 +1,7 @@
+##This code means custom field will look the same as many other text fields in JIRA that use the "basic text" input template. 
+##The #customControlHeader and #customControlFooter are Velocity macros defined in the macros.vm file built into JIRA. 
+##It checks certain conditions and adds standard UI text around the field, including a label, description, and validation error messages.
+##input class is the HTML form element that exposes the text field for entering a value for our custom field.
+#if ($value)
+    this is value $value
+#end

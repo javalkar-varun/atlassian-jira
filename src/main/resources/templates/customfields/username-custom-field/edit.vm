@@ -1,0 +1,5 @@
+## #if clause checks for null values in the value variable. If its value is null, nothing gets shown in the template rendering.
+## Otherwise, $value in the second line is replaced by the value of our transport object in the rendered template.
+#customControlHeader ($action $customField.id $customField.name $fieldLayoutItem.required $displayParameters $auiparams)
+<input class="text" id="$customField.id" name="$customField.id" type="text" value="$textutils.htmlEncode($!value)" />
+#customControlFooter ($action $customField.id $fieldLayoutItem.fieldDescription $displayParameters $auiparams)
