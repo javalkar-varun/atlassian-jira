@@ -4,7 +4,7 @@ jira-esig-plugin
 Jira eSig Plugin
 
 This is Jira E-Signature plugin project. Only authorized user will be allowed to E-Sign. 
-For example: If user would like to Resolve an issue create on Jira, only authorized user will be allowed to resolve the issue. User will enter their Cerner Associate Id and password. Ldap authentication is used to validate the authenticity of the user.
+For example: If user would like to Resolve an issue create on Jira, only authorized user will be allowed to resolve the issue. User will enter their credentials and password. Ldap authentication is used to validate the authenticity of the user.
 
 Prerequisites:
 - Setup Jira plugin skeleton
