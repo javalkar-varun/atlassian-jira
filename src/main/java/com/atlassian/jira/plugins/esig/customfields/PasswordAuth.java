@@ -93,7 +93,6 @@ public class PasswordAuth extends GenericTextCFType {
 	 *             is thrown if password is null or if password does not match
 	 *             regular expression pattern.
 	 */
-
 	@Override
 	public String getSingularObjectFromString(final String stringPassword)
 			throws FieldValidationException {
